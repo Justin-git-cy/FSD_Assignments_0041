@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elegant Boutique</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#fff8f8;
+color:#333;
+transition:.4s;
+}
+
+header{
+background:#c2185b;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+width:90%;
+margin:auto;
+height:70px;
+}
+
+.logo{
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.icons button{
+margin-left:10px;
+padding:10px;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+#menuBtn{
+display:none;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+url("https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1600");
+background-size:cover;
+background-position:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+margin:20px auto;
+max-width:600px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#c2185b;
+color:white;
+text-decoration:none;
+border-radius:30px;
+}
+
+.collection{
+padding:80px 10%;
+text-align:center;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+.card h3{
+margin:15px;
+}
+
+.card p{
+color:#c2185b;
+font-size:20px;
+}
+
+.card button{
+margin:20px;
+padding:12px 25px;
+background:#c2185b;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:25px;
+}
+
+.about,
+.contact{
+padding:80px 10%;
+text-align:center;
+}
+
+form{
+max-width:600px;
+margin:auto;
+}
+
+form input,
+form textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+}
+
+form button{
+padding:15px 30px;
+background:#c2185b;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+footer{
+background:#222;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.dark{
+background:#111;
+color:white;
+}
+
+.dark .card{
+background:#222;
+color:white;
+}
+
+.dark header{
+background:#000;
+}
+
+.dark footer{
+background:#000;
+}
+
+@media(max-width:768px){
+
+nav ul{
+display:none;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#c2185b;
+flex-direction:column;
+text-align:center;
+}
+
+nav ul.show{
+display:flex;
+}
+
+nav ul li{
+margin:20px;
+}
+
+#menuBtn{
+display:inline-block;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<h2 class="logo">Elegant Boutique</h2>
+
+<ul id="menu">
+<li><a href="#home">Home</a></li>
+<li><a href="#collection">Collection</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<div class="icons">
+<button id="themeBtn">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+<button id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</button>
+</div>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Discover Your Perfect Style</h1>
+
+<p>
+Exclusive Women's Boutique Collection with trendy dresses, ethnic wear and accessories.
+</p>
+
+<a href="#collection" class="btn">Shop Now</a>
+
+</div>
+
+</section>
+
+<section class="collection" id="collection">
+
+<h2>Our Collection</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=500">
+<h3>Elegant Dress</h3>
+<p>$49</p>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500">
+<h3>Party Wear</h3>
+<p>$69</p>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500">
+<h3>Casual Outfit</h3>
+<p>$39</p>
+<button>Buy Now</button>
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2>About Us</h2>
+
+<p>
+Elegant Boutique brings you premium fashion, beautiful collections and unique styles crafted for every occasion.
+</p>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<form id="contactForm">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email" required>
+
+<textarea rows="5" placeholder="Message"></textarea>
+
+<button type="submit">Send</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Elegant Boutique | All Rights Reserved</p>
+
+</footer>
+
+<script>
+
+const menuBtn=document.getElementById("menuBtn");
+const menu=document.getElementById("menu");
+const themeBtn=document.getElementById("themeBtn");
+
+menuBtn.onclick=()=>{
+menu.classList.toggle("show");
+};
+
+themeBtn.onclick=()=>{
+document.body.classList.toggle("dark");
+};
+
+document.getElementById("contactForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Thank you for contacting Elegant Boutique!");
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+</html>
