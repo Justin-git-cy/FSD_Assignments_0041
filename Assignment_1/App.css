@@ -1,0 +1,173 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#111827;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#1f2937;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#7c3aed;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#7c3aed;
+}
+
+.hero{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1500&q=80");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:65px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+button{
+padding:12px 30px;
+background:#7c3aed;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:17px;
+transition:.3s;
+}
+
+button:hover{
+background:#5b21b6;
+}
+
+.songs{
+padding:70px;
+text-align:center;
+}
+
+.songs h2{
+margin-bottom:40px;
+font-size:40px;
+}
+
+.song-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.song-card{
+width:260px;
+background:#1f2937;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+padding-bottom:20px;
+}
+
+.song-card:hover{
+transform:translateY(-10px);
+}
+
+.song-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.song-card h3{
+margin-top:15px;
+}
+
+.song-card p{
+margin:15px;
+color:#d1d5db;
+}
+
+.artist{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:60px;
+padding:80px;
+background:#1f2937;
+flex-wrap:wrap;
+}
+
+.artist img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #7c3aed;
+}
+
+.artist h2{
+color:#7c3aed;
+margin-bottom:10px;
+}
+
+.artist h3{
+font-size:32px;
+margin-bottom:20px;
+}
+
+.artist p{
+max-width:500px;
+line-height:1.8;
+margin-bottom:20px;
+}
+
+footer{
+background:#111827;
+padding:30px;
+text-align:center;
+}
+
+.footer-links{
+margin-top:15px;
+}
+
+.footer-links a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+}
+
+.footer-links a:hover{
+color:#7c3aed;
+}
